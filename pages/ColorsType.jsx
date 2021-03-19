@@ -1,3 +1,5 @@
+import { useState, useEffect } from "react";
+
 import Head from "next/head";
 import Layout from "../src/layouts";
 import {
@@ -11,6 +13,14 @@ import {
 } from "../src/styles/ColorTypes.styled";
 
 const ColorsType = () => {
+  // Get Colors
+  const [colors, setColors] = useState([]);
+  useEffect(async () => {
+    const c = await fetch("/data/colors.json")
+      .then((res) => res.json())
+      .then((data) => setColors(data.colors));
+  }, []);
+
   return (
     <>
       <Head>
@@ -20,20 +30,16 @@ const ColorsType = () => {
       <Layout>
         <Wrapper>
           <List>
-            <Item>
-              <ColorPreview color="#1f2041" opacity="100%" />
-              <ColorData>
-                <ColorName>Dark Shade 100%</ColorName>
-                <ColorValue>#1F2041</ColorValue>
-              </ColorData>
-            </Item>
-            <Item>
-              <ColorPreview color="#1f2041" opacity="75%" />
-              <ColorData>
-                <ColorName>Dark Shade 75%</ColorName>
-                <ColorValue>#1F2041</ColorValue>
-              </ColorData>
-            </Item>
+            {colors &&
+              colors.map((color, index) => (
+                <Item key={`${color.name}_${index}`}>
+                  <ColorPreview color={color.value} opacity={color.opacity} />
+                  <ColorData>
+                    <ColorName>{color.name}</ColorName>
+                    <ColorValue>{color.value}</ColorValue>
+                  </ColorData>
+                </Item>
+              ))}
           </List>
           <List></List>
         </Wrapper>
