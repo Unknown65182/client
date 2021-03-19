@@ -10,15 +10,22 @@ import {
   ColorData,
   ColorName,
   ColorValue,
+  Tag,
+  TextPreview,
 } from "../src/styles/ColorTypes.styled";
 
 const ColorsType = () => {
-  // Get Colors
   const [colors, setColors] = useState([]);
+  const [textVariants, setTextVariants] = useState([]);
+
+  // Get Colors and text variants
   useEffect(async () => {
-    const c = await fetch("/data/colors.json")
+    await fetch("/data/colors.json")
       .then((res) => res.json())
       .then((data) => setColors(data.colors));
+    await fetch("/data/text_variants.json")
+      .then((res) => res.json())
+      .then((data) => setTextVariants(data.text_variants));
   }, []);
 
   return (
@@ -32,7 +39,7 @@ const ColorsType = () => {
           <List>
             {colors &&
               colors.map((color, index) => (
-                <Item key={`${color.name}_${index}`}>
+                <Item key={`${color.name}_${index}`} marginBottom="20px">
                   <ColorPreview color={color.value} opacity={color.opacity} />
                   <ColorData>
                     <ColorName>{color.name}</ColorName>
@@ -41,7 +48,26 @@ const ColorsType = () => {
                 </Item>
               ))}
           </List>
-          <List></List>
+          <List>
+            {textVariants &&
+              textVariants.map((variant, index) => (
+                <Item key={`${variant.tag}_${index}`} marginBottom="51px">
+                  <Tag size={variant.size} lineHeight={variant.lineHeight}>
+                    {variant.tag}
+                  </Tag>
+                  <TextPreview
+                    size={variant.size}
+                    weight={variant.weight}
+                    lineHeight={variant.lineHeight}
+                    opacity={index === textVariants.length - 1 ? "75%" : "100%"}
+                  >
+                    {variant.tag === "H3"
+                      ? variant.example.toUpperCase()
+                      : variant.example}
+                  </TextPreview>
+                </Item>
+              ))}
+          </List>
         </Wrapper>
       </Layout>
     </>

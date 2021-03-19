@@ -1,0 +1,32 @@
+{
+  "text_variants": [
+    {
+      "tag": "H1",
+      "example": "This one is the sub-section or widget title",
+      "size": "24px",
+      "weight": 700,
+      "lineHeight": "30px"
+    },
+    {
+      "tag": "H2",
+      "example": "Next one is the item title inside widgets",
+      "size": "19px",
+      "weight": 700,
+      "lineHeight": "23.16px"
+    },
+    {
+      "tag": "H3",
+      "example": "This is a label or CTA text",
+      "size": "12px",
+      "weight": 700,
+      "lineHeight": "15px"
+    },
+    {
+      "tag": "Body",
+      "example": "This is the body text which is used for most of the design, like paragraphs, lists, etc.",
+      "size": "14px",
+      "weight": 400,
+      "lineHeight": "24px"
+    }
+  ]
+}

@@ -1,10 +1,12 @@
 import { Wrapper, Content } from "./index.styled";
-import Image from "next/image";
+import Link from "next/link";
 
 const Layout = ({ children }) => {
   return (
     <Wrapper>
-      <Image src="/assets/icons/logo.svg" width={48} height={48} />
+      <Link href="/">
+        <img src="/assets/icons/logo.svg" width={48} height={48} alt="logo" />
+      </Link>
       <Content>{children}</Content>
     </Wrapper>
   );
