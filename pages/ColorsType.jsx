@@ -46,7 +46,7 @@ const ColorsType = () => {
             {colors &&
               colors.map((color, index) => (
                 <Item key={`${color.name}_${index}`} marginBottom="20px">
-                  <ColorPreview color={color.value} opacity={color.opacity} />
+                  <ColorPreview color={color.value} />
                   <ColorData>
                     <ColorName>{color.name}</ColorName>
                     <ColorValue>{color.value}</ColorValue>
@@ -65,7 +65,9 @@ const ColorsType = () => {
                     size={variant.size}
                     weight={variant.weight}
                     lineHeight={variant.lineHeight}
-                    opacity={index === textVariants.length - 1 ? 0.75 : 1}
+                    {...(variant.tag === "Body"
+                      ? { style: { color: "var(--dark-shade-75)" } }
+                      : {})}
                   >
                     {variant.tag === "H3"
                       ? variant.example.toUpperCase()

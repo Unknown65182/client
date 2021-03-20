@@ -29,7 +29,6 @@ export const ColorPreview = styled.span`
   height: 70px;
   border-radius: 6px;
   background-color: ${(props) => props.color};
-  opacity: ${(props) => props.opacity};
 `;
 export const ColorData = styled.div`
   margin: 7px 0 7px 40px;
@@ -41,7 +40,6 @@ export const ColorName = styled.h2`
   font-weight: 700;
 `;
 export const ColorValue = styled.p`
-  font-family: "Montserrat", sans-serif;
   font-size: 19px;
   line-height: 28px;
   font-weight: 400;
@@ -52,8 +50,7 @@ export const Tag = styled.p`
   font-weight: 400;
   line-height: ${(props) => props.lineHeight};
   margin-right: 30px;
-  color: #1f2041;
-  opacity: 0.25;
+  color: var(--dark-shade-25);
   width: 37px;
   text-align: end;
 `;
@@ -61,7 +58,6 @@ export const TextPreview = styled.p`
   font-size: ${(props) => props.size};
   font-weight: ${(props) => props.weight};
   line-height: ${(props) => props.lineHeight};
-  color: #1f2041;
-  opacity: ${(props) => props.opacity};
+  color: var(--dark-shade);
   max-width: 377px;
 `;

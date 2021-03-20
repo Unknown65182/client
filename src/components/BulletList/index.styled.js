@@ -7,8 +7,7 @@ export const Item = styled.li`
   font-weight: 400;
   font-size: 14px;
   line-height: 24px;
-  color: var(--dark-shade);
-  opacity: 0.75;
+  color: var(--dark-shade-75);
   position: relative;
 
   &:not(:last-child) {
@@ -24,7 +23,6 @@ export const Item = styled.li`
     width: 10px;
     height: 10px;
     border-radius: 50%;
-    background-color: var(--dark-shade);
-    opacity: 0.25;
+    background-color: var(--dark-shade-25);
   }
 `;

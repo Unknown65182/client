@@ -2,38 +2,31 @@
   "colors": [
     {
       "name": "Dark Shade 100%",
-      "value": "#1F2041",
-      "opacity": 1
+      "value": "rgb(31, 32, 65)"
     },
     {
       "name": "Dark Shade 75%",
-      "value": "#1F2041",
-      "opacity": 0.75
+      "value": "rgba(31, 32, 65, 0.75)"
     },
     {
       "name": "Dark Shade 50%",
-      "value": "#1F2041",
-      "opacity": 0.5
+      "value": "rgba(31, 32, 65, 0.5)"
     },
     {
       "name": "Dark Shade 25%",
-      "value": "#1F2041",
-      "opacity": 0.25
+      "value": "rgba(31, 32, 65, 0.25)"
     },
     {
       "name": "Dark Shade 5%",
-      "value": "#1F2041",
-      "opacity": 0.05
+      "value": "rgba(31, 32, 65, 0.05)"
     },
     {
       "name": "Purple",
-      "value": "#BC9CFF",
-      "opacity": 1
+      "value": "rgb(188, 156, 255)"
     },
     {
       "name": "Green",
-      "value": "#6FCF97",
-      "opacity": 1
+      "value": "rgb(111, 207, 151)"
     }
   ]
 }

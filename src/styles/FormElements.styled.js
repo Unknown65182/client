@@ -17,7 +17,7 @@ export const Row = styled.div`
   flex-direction: row;
   justify-content: space-between;
 
-  border: 1px solid #000;
+  border: 1px solid var();
 `;
 export const Column = styled.div`
   width: 100%;

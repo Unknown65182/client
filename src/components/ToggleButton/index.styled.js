@@ -10,9 +10,8 @@ export const Toggle = styled.input`
   display: inline-block;
   min-width: 40px;
   height: 20px;
-  background: #fff;
-  border: 1px solid var(--dark-shade);
-  opacity: 0.25;
+  background: var(--white);
+  border: 1px solid var(--dark-shade-25);
   border-radius: 10px;
   outline: none;
   cursor: pointer;
@@ -26,22 +25,21 @@ export const Toggle = styled.input`
     top: 50%;
     width: 12px;
     height: 12px;
-    background-image: linear-gradient(var(--dark-shade), var(--dark-shade));
-    opacity: 0.25;
+    background-image: linear-gradient(
+      var(--dark-shade-25),
+      var(--dark-shade-25)
+    );
     border-radius: 50%;
     transform: translate3d(0, -50%, 0);
-    transition: background-image 0.2s ease-in-out, transform 0.2s ease-in-out,
-      opacity 0.2s ease-in-out;
+    transition: background-image 0.2s ease-in-out, transform 0.2s ease-in-out;
   }
 
   &:checked:after {
     transform: translate3d(calc(100% + 7px), -50%, 0);
-    background-image: linear-gradient(var(--purple), #8ba4f9);
-    opacity: 1;
+    background-image: linear-gradient(var(--purple), var(--blue));
   }
   &:checked {
     border: 1px solid var(--purple);
-    opacity: 1;
   }
 `;
 export const Label = styled.label`
@@ -49,7 +47,6 @@ export const Label = styled.label`
   font-weight: 400;
   font-size: 14px;
   line-height: 24px;
-  color: var(--dark-shade);
-  opacity: 0.75;
+  color: var(--dark-shade-75);
   cursor: pointer;
 `;

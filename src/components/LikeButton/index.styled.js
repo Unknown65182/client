@@ -5,8 +5,7 @@ export const Wrapper = styled.button`
   height: 20px;
   background: transparent;
   border: 1px solid
-    ${(props) => (props.actived ? "var(--purple)" : "var(--dark-shade)")};
-  opacity: ${(props) => (props.actived ? "1" : "0.25")};
+    ${(props) => (props.actived ? "var(--purple)" : "var(--dark-shade-25)")};
   border-radius: 10px;
   display: flex;
   justify-content: center;
@@ -17,7 +16,7 @@ export const Icon = styled.span`
   flex: 0 0 50%;
   font-size: 10px;
   line-height: 9px;
-  background: linear-gradient(var(--purple), #8ba4f9);
+  background: linear-gradient(var(--purple), var(--blue));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 `;

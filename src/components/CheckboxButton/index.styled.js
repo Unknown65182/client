@@ -10,9 +10,8 @@ export const Icon = styled.input`
   display: inline-block;
   min-width: 20px;
   height: 20px;
-  background: #fff;
-  border: 1px solid var(--dark-shade);
-  opacity: 0.25;
+  background: var(--white);
+  border: 1px solid var(--dark-shade-25);
   border-radius: 4px;
   outline: none;
   cursor: pointer;
@@ -26,10 +25,8 @@ export const Icon = styled.input`
     top: 50%;
     width: 8px;
     height: 6px;
-    opacity: 0;
     transform: translate3d(-50%, -50%, 0) rotate(-45deg);
-    transition: background-image 0.2s ease-in-out, transform 0.2s ease-in-out,
-      opacity 0.2s ease-in-out;
+    transition: background-image 0.2s ease-in-out, transform 0.2s ease-in-out;
   }
 
   &:after {
@@ -40,17 +37,15 @@ export const Icon = styled.input`
     top: 50%;
     width: 6px;
     height: 4px;
-    background-color: #fff;
+    background-color: var(--white);
     transform: translate3d(-50%, -90%, 0) rotate(-45deg);
   }
 
   &:checked:before {
-    background-image: linear-gradient(to right, var(--purple), #8ba4f9);
-    opacity: 1;
+    background-image: linear-gradient(to left, var(--purple), var(--blue));
   }
   &:checked {
     border: 1px solid var(--purple);
-    opacity: 1;
   }
 `;
 export const Label = styled.label`
@@ -59,6 +54,5 @@ export const Label = styled.label`
   font-size: 14px;
   line-height: 18px;
   color: var(--dark-shade);
-  opacity: 0.5;
   cursor: pointer;
 `;
