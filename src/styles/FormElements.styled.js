@@ -16,8 +16,14 @@ export const Row = styled.div`
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+
+  border: 1px solid #000;
 `;
-export const Column = styled.div``;
+export const Column = styled.div`
+  width: 100%;
+  /* border: 1px solid #000; */
+  margin: 20px;
+`;
 
 export const Component = styled.div`
   margin-bottom: 40px;
