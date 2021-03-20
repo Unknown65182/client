@@ -3,37 +3,37 @@
     {
       "name": "Dark Shade 100%",
       "value": "#1F2041",
-      "opacity": "100%"
+      "opacity": 1
     },
     {
       "name": "Dark Shade 75%",
       "value": "#1F2041",
-      "opacity": "75%"
+      "opacity": 0.75
     },
     {
       "name": "Dark Shade 50%",
       "value": "#1F2041",
-      "opacity": "50%"
+      "opacity": 0.5
     },
     {
       "name": "Dark Shade 25%",
       "value": "#1F2041",
-      "opacity": "25%"
+      "opacity": 0.25
     },
     {
       "name": "Dark Shade 5%",
       "value": "#1F2041",
-      "opacity": "5%"
+      "opacity": 0.05
     },
     {
       "name": "Purple",
       "value": "#BC9CFF",
-      "opacity": "100%"
+      "opacity": 1
     },
     {
       "name": "Green",
       "value": "#6FCF97",
-      "opacity": "100%"
+      "opacity": 1
     }
   ]
 }

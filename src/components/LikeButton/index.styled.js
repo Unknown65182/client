@@ -6,7 +6,7 @@ export const Wrapper = styled.button`
   background: transparent;
   border: 1px solid
     ${(props) => (props.actived ? "var(--purple)" : "var(--dark-shade)")};
-  opacity: ${(props) => (props.actived ? "100%" : "25%")};
+  opacity: ${(props) => (props.actived ? "1" : "0.25")};
   border-radius: 10px;
   display: flex;
   justify-content: center;

@@ -8,7 +8,7 @@ export const Item = styled.li`
   font-size: 14px;
   line-height: 24px;
   color: var(--dark-shade);
-  opacity: 75%;
+  opacity: 0.75;
   position: relative;
 
   &:not(:last-child) {
@@ -25,6 +25,6 @@ export const Item = styled.li`
     height: 10px;
     border-radius: 50%;
     background-color: var(--dark-shade);
-    opacity: 25%;
+    opacity: 0.25;
   }
 `;
