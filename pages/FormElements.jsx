@@ -6,9 +6,14 @@ import {
   Column,
   Component,
   Title,
-  WrapperComponent,
 } from "../src/styles/FormElements.styled";
-import { ToggleButton, LikeButton, BulletList } from "../src/components";
+import {
+  CheckboxButton,
+  ToggleButton,
+  LikeButton,
+  BulletList,
+  GroupButtons,
+} from "../src/components";
 
 const FormElements = () => {
   const list = [
@@ -28,16 +33,29 @@ const FormElements = () => {
             <Column>1</Column>
             <Column>
               <Component>
+                <Title>Checkbox Buttons</Title>
+                <GroupButtons>
+                  <CheckboxButton label="Можно курить" />
+                  <CheckboxButton actived label="Можно с питомцами" />
+                  <CheckboxButton
+                    actived
+                    label="Можно пригласить гостей (до 10 человек)"
+                  />
+                </GroupButtons>
+              </Component>
+              <Component>
                 <Title>Toggle</Title>
-                <ToggleButton actived label="Получать спецпредложения" />
-                <ToggleButton label="Получать спецпредложения" />
+                <GroupButtons>
+                  <ToggleButton actived label="Получать спецпредложения" />
+                  <ToggleButton label="Получать спецпредложения" />
+                </GroupButtons>
               </Component>
               <Component>
                 <Title>Like Button</Title>
-                <WrapperComponent>
+                <GroupButtons direction="row">
                   <LikeButton actived />
                   <LikeButton />
-                </WrapperComponent>
+                </GroupButtons>
               </Component>
             </Column>
             <Column>3</Column>

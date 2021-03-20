@@ -37,8 +37,3 @@ export const Title = styled.h3`
   line-height: 15px;
   color: var(--dark-shade);
 `;
-
-export const WrapperComponent = styled.div`
-  display: flex;
-  flex-direction: row;
-`;

@@ -8,7 +8,7 @@ export const Toggle = styled.input`
   appearance: none;
   position: relative;
   display: inline-block;
-  width: 40px;
+  min-width: 40px;
   height: 20px;
   background: #fff;
   border: 1px solid var(--dark-shade);
