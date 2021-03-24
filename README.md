@@ -1,4 +1,4 @@
-[![GitHub](https://img.shields.io/github/license/Unknown65182/toxin)](https://github.com/Unknown65182/toxin/blob/master/LICENSE)[![Codacy Badge](https://app.codacy.com/project/badge/Grade/bc80e84f970241b9900d1e4b0f6612dd)](https://www.codacy.com/gh/Unknown65182/toxin/dashboard?utm_source=github.com&utm_medium=referral&utm_content=Unknown65182/toxin&utm_campaign=Badge_Grade)
+[![GitHub](https://img.shields.io/github/license/Unknown65182/toxin)](https://github.com/Unknown65182/toxin/blob/master/LICENSE) [![Codacy Badge](https://app.codacy.com/project/badge/Grade/bc80e84f970241b9900d1e4b0f6612dd)](https://www.codacy.com/gh/Unknown65182/toxin/dashboard?utm_source=github.com&utm_medium=referral&utm_content=Unknown65182/toxin&utm_campaign=Badge_Grade) ![CircleCI](https://img.shields.io/circleci/build/github/Unknown65182/toxin/main?token=bfe99997e900ab15fd22e7c2e29f131bb9eabbf3)
 
 https://toxin.vercel.app/
 
