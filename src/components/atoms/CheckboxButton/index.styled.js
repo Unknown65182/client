@@ -2,6 +2,8 @@ import styled from "styled-components";
 
 export const Wrapper = styled.label`
   display: flex;
+  /* flex-direction: column; */
+  /* padding-left: 30px; */
   font-weight: 400;
   font-size: 14px;
   line-height: 20px;
@@ -52,4 +54,8 @@ export const Icon = styled.input`
   &:checked {
     border: 1px solid var(--purple);
   }
+`;
+
+export const Rich = styled.span`
+  display: block;
 `;

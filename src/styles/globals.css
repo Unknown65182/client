@@ -20,6 +20,17 @@ ul {
   list-style: none;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+  padding: 0;
+}
+
 :root {
   --dark-shade: rgb(31, 32, 65);
   --dark-shade-75: rgba(31, 32, 65, 0.75);
@@ -31,4 +42,6 @@ ul {
   --blue: rgb(139, 164, 249);
   --white: rgb(255, 255, 255);
   --black: rgb(0, 0, 0);
+  --border: rgba(0, 0, 0, 0.12);
+  --shadow: rgba(0, 0, 0, 0.2);
 }

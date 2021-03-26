@@ -8,6 +8,7 @@ import {
   Title,
 } from "../src/styles/FormElements.styled";
 import {
+  TextField,
   CheckboxButton,
   RadioButtons,
   ToggleButton,
@@ -31,7 +32,16 @@ const FormElements = () => {
       <Layout>
         <Wrapper>
           <Row>
-            <Column>1</Column>
+            <Column>
+              <Component>
+                <Title>Text Field</Title>
+                <TextField placeholder="Email" />
+              </Component>
+              <Component>
+                <Title>Text Field</Title>
+                <TextField placeholder="Email" />
+              </Component>
+            </Column>
             <Column>
               <Component>
                 <Title>Checkbox Buttons</Title>
@@ -79,13 +89,22 @@ const FormElements = () => {
           </Row>
           <Row>
             <Column>7</Column>
-            <Column>8</Column>
             <Column>
               <Component>
-                <Title>Bullet List</Title>
-                <BulletList list={list} />
+                <Title>Rich Checkbox Buttons</Title>
+                <GroupButtons>
+                  <CheckboxButton
+                    label="Широкий коридор"
+                    rich="Ширина коридоров в номере не менее 91 см."
+                  />
+                  <CheckboxButton
+                    label="Помощник для инвалидов"
+                    rich="На 1 этаже вас встретит специалист  и проводит до номера."
+                  />
+                </GroupButtons>
               </Component>
             </Column>
+            <Column></Column>
           </Row>
           <Row>
             <Column>10</Column>
