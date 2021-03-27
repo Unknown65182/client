@@ -10,6 +10,10 @@ module.exports = withBundleAnalyzer({
         "process.env.BUILD_ID": JSON.stringify(buildId),
       })
     );
+    config.module.rules.push({
+      test: /\.graphql?$/,
+      loader: "webpack-graphql-loader",
+    });
     if (!isServer) {
       config.node = {
         fs: "empty",
@@ -25,5 +29,14 @@ module.exports = withBundleAnalyzer({
     };
 
     return config;
+  },
+  async redirects() {
+    return [
+      {
+        source: "/api/:slug/:slug",
+        destination: "/_error", // The :path parameter is used here so will not be automatically passed in the query
+        permanent: true,
+      },
+    ];
   },
 });

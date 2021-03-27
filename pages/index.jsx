@@ -12,6 +12,7 @@ export default function Home() {
         <main>
           <Link href="/SignIn">SignIn</Link>
           <Link href="/">SignOut</Link>
+          <Link href="/Todo">Todo</Link>
           {/* <ul>
             <li>
               <Link href="/ColorsType">Colors & Type</Link>
